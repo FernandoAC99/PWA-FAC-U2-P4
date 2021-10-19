@@ -95,7 +95,7 @@ self.addEventListener('fetch', (event) => {
                     console.log("Error en la consulta")
                     console.log(event.request)
                     if(event.request.headers.get('accept').includes('text/html')){
-                        return caches.match('/pages/viewOffline.html')
+                        return caches.match('/PWA-FAC-U2-P4/pages/viewOffline.html')
                     }
                     if(event.request.url.includes('jpg')){
                         console.log("Es una imagen")
